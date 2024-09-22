@@ -71,6 +71,10 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider {
 			case 5: $this->bootLaravel5(); break;
 			case 6: $this->bootLaravel5(); break;
 			case 7: $this->bootLaravel5(); break;
+			case 8: $this->bootLaravel5(); break;
+			case 9: $this->bootLaravel5(); break;
+			case 10: $this->bootLaravel5(); break;
+			case 11: $this->bootLaravel5(); break;
 			default: throw new Exception('Unsupported Laravel version');
 		}
 
@@ -150,7 +154,11 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider {
             4 => 'laravel-haml::config',
             5 => 'laravel-haml',
             6 => 'haml',
-					  7 => 'haml'
+					  7 => 'haml',
+					  8 => 'haml',
+					  9 => 'haml',
+					  10 => 'haml',
+					  11 => 'haml'
         ];
 
 		$key = $configFiles[$this->version()];
